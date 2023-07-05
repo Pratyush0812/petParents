@@ -1,0 +1,109 @@
+
+.container{
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.div1, .div2 {
+    flex: 1 1 50%;
+    /* Adjust flex-basis value to control the width of each div */
+  }
+.div1{
+    align-items: center;
+    justify-content: center;
+}
+form {
+    max-width: 350px;
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 25px;
+  }
+  
+  .checkout-method {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  
+button {
+    background-color: #242424;
+    color: #fff;
+    padding: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+.button:hover,
+.button:focus {
+  background-color: #353535;
+  color: #fff;
+}
+
+.button i {
+  font-size: 24px;
+}
+
+.button--inactive {
+  background-color: #f2f2f2;
+  color: #242424;
+}
+
+.checkout-information,
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input-group {
+  gap: 5px;
+}
+.input-group label {
+    font-size: 14px;
+    color: #242424;
+    font-weight: bold;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 5px 15px;
+    border-radius: 8px;
+    background-color: #f2f2f2;
+  }
+  
+  .input-group input:focus {
+    outline: 2px solid #242424;
+    background-color: transparent;
+  }
+  
+  .horizontal-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 15px;
+  }
+  
+  .button--checkout {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 15px 0;
+  }
+  .input-group textarea {
+    width: 100%;
+    padding: 5px 15px;
+    border-radius: 8px;
+    background-color: #f2f2f2;
+  }
+  
+  .input-group textarea:focus {
+    outline: 2px solid #242424;
+    background-color: transparent;
+  }
+
+  
