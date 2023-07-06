@@ -42,11 +42,11 @@ function Form() {
     <div className="checkout-information">
        <div className="input-group">
         <label for="Category">Category *</label>
-        <input list="cat" name="cat" required value = {cat} onChange={(e)=>setCat(e.target.value)}/>
-        <datalist id="cat">
-            <option value="Dog" />
-            <option value="Cat" />
-        </datalist>
+        <select class="classic" id = 'cat' name="cat" placeholder = 'Select' required onChange={(e)=>setCat(e.target.value)}>
+          <option value ='' selected="true" disabled="disabled" hidden>Select</option>
+          <option value = 'Cat'>Cat</option>
+          <option value = 'Dog'>Dog</option>
+        </select>
       </div>
       <div className="input-group">
         <label for="name">Name</label>
@@ -54,7 +54,7 @@ function Form() {
       </div>
       <div className="input-group">
         <label for="breed">Breed *</label>
-        <input type="text" id="breed" placeholder="Enter the breed" required value = {breed} onChange={(e)=>setBreed(e.target.value)}/>
+        <input type="text" id="breed" placeholder="Enter the breed" required value = {breed} onChange={(e)=>{setBreed(e.target.value)}}/>
       </div>
       <div className="horizontal-grid">
         <div className="input-group">
@@ -68,11 +68,12 @@ function Form() {
       </div>
       <div className="input-group">
         <label for="vac">Vaccinated *</label>
-        <input list="vac" name="vac" required onChange={(e)=>setVac(e.target.value==='Yes'? true : false)}/>
-        <datalist id="vac">
-            <option value="Yes" />
-            <option value="No" />
-        </datalist>
+        {/* <input list="vac" name="vac" required onChange={(e)=>setVac(e.target.value==='Yes'? true : false)}/> */}
+        <select class="classic" id = 'vac' name="vac" required onChange={(e)=>setVac(e.target.value==='Yes'? true : false)}>
+          <option value ='' selected="true" disabled="disabled" hidden>Select</option>
+          <option value = 'No'>No</option>
+          <option value = 'Yes'>Yes</option>
+        </select>
       </div>      
       <div className="input-group">
         <label for="history">Medical History</label>
