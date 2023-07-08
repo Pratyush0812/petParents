@@ -7,7 +7,8 @@ const schema = new mongoose.Schema({
     date : 'String',
     age : 'Number',
     vac : 'Boolean',
-    history : 'String'
+    history : 'String',
+    images : 'Array'
 })
 
 export const Listing = mongoose.model('Listing',schema)
