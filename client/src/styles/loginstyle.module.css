@@ -1,11 +1,5 @@
 
-.full{
-    background-image: url('../images/doggy-bg2.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width : 100%;
-    height : 100%;
-}
+
 .centeredform {
     display: flex;
     justify-content: right;
@@ -133,6 +127,13 @@
     color: #fff;
     background-color: #3F2305;
   }
+  .full1{
+    width : 100%;
+    height : 100%;
+    background-image: url("../images/doggy-bg2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
   
   @keyframes pulse {
     from {

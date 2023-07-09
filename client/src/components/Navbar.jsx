@@ -1,6 +1,6 @@
-import React from "react";
 
-function Navbar() {
+import { Link } from 'react-router-dom';
+function Navbar({user}) {
     return (
         <div>
             <nav className="bg-white border-gray-200 dark:bg-primaryBrown">
@@ -16,8 +16,8 @@ function Navbar() {
 
                         <div className="z-50 hidden my-4 text-base list-none bg-lund divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600" id="user-dropdown">
                             <div className="px-4 py-3">
-                                <span className="block text-sm text-gray-900 dark:text-white">Ritwij Kashyap</span>
-                                <span className="block text-sm  text-gray-500 truncate dark:text-gray-400">ritwijkp@gmail.com</span>
+                                <span className="block text-sm text-gray-900 dark:text-white">{user.firstname} {user.lastname}</span>
+                                <span className="block text-sm  text-gray-500 truncate dark:text-gray-400">{user.email}</span>
                             </div>
                             <ul className="py-2" aria-labelledby="user-menu-button">
                                 <li>
@@ -30,7 +30,7 @@ function Navbar() {
                                     <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Earnings</a>
                                 </li>
                                 <li>
-                                    <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
+                                    <Link to="/login" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</Link>
                                 </li>
                             </ul>
                         </div>

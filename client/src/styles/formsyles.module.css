@@ -23,7 +23,7 @@
     padding: 25px;
   }
   
-  .checkout-method {
+  .checkoutmethod {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
@@ -31,7 +31,7 @@
   
 .button {
     background-color: #242424;
-    color: #fff;
+    color: #242424;
     padding: 5px;
     border-radius: 8px;
     cursor: pointer;
@@ -52,66 +52,66 @@
   color: #242424;
 }
 
-.checkout-information,
-.input-group {
+.checkoutinformation,
+.inputgroup {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-.input-group {
+.inputgroup {
   gap: 5px;
 }
-.input-group label {
+.inputgroup label {
     font-size: 14px;
     color: #242424;
     font-weight: bold;
   }
   
-  .input-group input {
+  .inputgroup input {
     width: 100%;
     padding: 5px 15px;
     border-radius: 8px;
     background-color: #f2f2f2;
   }
   
-  .input-group input:focus {
+  .inputgroup input:focus {
     outline: 2px solid #242424;
     background-color: transparent;
   }
   
-  .horizontal-grid {
+  .horizontalgrid {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 15px;
   }
   
-  .button--checkout {
+  .buttoncheckout {
     font-size: 14px;
     font-weight: bold;
     letter-spacing: 1px;
     text-transform: uppercase;
     padding: 15px 0;
   }
-  .input-group textarea {
+  .inputgroup textarea {
     width: 100%;
     padding: 5px 15px;
     border-radius: 8px;
     background-color: #f2f2f2;
   }
   
-  .input-group textarea:focus {
+  .inputgroup textarea:focus {
     outline: 2px solid #242424;
     background-color: transparent;
   }
-  .input-group select {
+  .inputgroup select {
     width: 100%;
     padding: 5px 15px;
     border-radius: 8px;
     background-color: #f2f2f2;
   }
   
-  .input-group select:focus {
+  .inputgroup select:focus {
     outline: 2px solid #242424;
     background-color: transparent;
   }
